@@ -26,13 +26,14 @@ public class HelloSpringController {
     public String helloAgain(@PathVariable String name, Model model) {
         String greeting = "Hello, " + name + "!";
         model.addAttribute("greeting", greeting);
-        return "hello";
+        return "hello" ;
     }
 
     @GetMapping("form")
     public String helloForm() {
-        return "form";
+    return "form";
     }
+
 
     @GetMapping("hello-names")
     public String helloNames(Model model) {
